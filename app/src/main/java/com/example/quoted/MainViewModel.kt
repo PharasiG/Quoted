@@ -1,19 +1,19 @@
 package com.example.quoted
 
 import android.app.Application
-import android.content.Context
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
 import com.google.gson.Gson
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     private var quoteList: Array<Quote> = emptyArray()
     private var index: Int = 0
     private var size = 0
+    private val indexManager = IndexManager(application)
 
     init {
         quoteList = loadQuoteFromAssets()
         size = quoteList.size
+        index = indexManager.readSavedIndex()
     }
 
     private fun loadQuoteFromAssets(): Array<Quote> {
@@ -32,11 +32,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     fun nextQuote(): Quote {
         if (++index == size) index = 0
+        indexManager.saveIndex(index)
         return quoteList[index]
     }
 
     fun prevQuote(): Quote {
         if (--index < 0) index = size - 1
+        indexManager.saveIndex(index)
         return quoteList[index]
     }
 }

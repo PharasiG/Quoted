@@ -11,12 +11,12 @@
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/montserrat_alternates_semibold"
         android:text="@string/app_name"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,12 +39,12 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/cd_quote_image"
             android:foregroundGravity="top"
             android:rotation="180"
-            app:srcCompat="@drawable/ic_quote"
-            android:contentDescription="@string/cd_quote_image" />
+            app:srcCompat="@drawable/ic_quote" />
 
         <TextView
             android:id="@+id/quoteText"
@@ -53,9 +53,9 @@
             android:fontFamily="@font/montserrat_alternates_semibold"
             android:paddingStart="10dp"
             android:textColor="#000000"
-            android:textSize="24sp"
-            tools:text='"Genius is one percent inspiration and ninety-nine percent perspiration."'
-            tools:ignore="RtlSymmetry" />
+            android:textSize="22sp"
+            tools:ignore="RtlSymmetry"
+            tools:text='"Genius is one percent inspiration and ninety-nine percent perspiration."' />
 
         <TextView
             android:id="@+id/quoteAuthor"
@@ -64,9 +64,9 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_alternates_medium_italic"
             android:paddingStart="10dp"
-            android:textSize="18sp"
-            tools:text="Bruce Wayne"
-            tools:ignore="RtlSymmetry" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry"
+            tools:text="Bruce Wayne" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -106,7 +106,7 @@
             android:onClick="onPrev"
             android:text="@string/previous"
             android:textColor="#80FFFFFF"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:drawableStartCompat="@drawable/ic_prev_arrow"
             app:drawableTint="#80FFFFFF"
             tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />

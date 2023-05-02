@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Quoted</string>
-    <string name="cd_share_button">button to share the quote</string>
+    <string name="app_name">QUOTED</string>
+    <string name="cd_share_button">share the quote</string>
     <string name="next">NEXT</string>
     <string name="shareable_text">%1$s\n-%2$s</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="cd_quote_image">quote image</string>
 </resources>

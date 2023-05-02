@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        data = ViewModelProvider(this).get(MainViewModel::class.java)
+        data = ViewModelProvider(this)[MainViewModel::class.java]
         quoteText = binding.quoteText
         quoteAuthor = binding.quoteAuthor
 
