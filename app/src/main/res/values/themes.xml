@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Quoted" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        <item name="floatingActionButtonStyle">@style/AppShapeAppearance.SmallComponent</item>-->
+    </style>
+
+    <style name="Theme.Quoted" parent="Base.Theme.Quoted">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="fabShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+<!--        <item name="cornerSize">28dp</item>-->
+    </style>
+</resources>
